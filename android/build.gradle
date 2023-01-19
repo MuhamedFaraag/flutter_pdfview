@@ -4,17 +4,18 @@ version '1.0-SNAPSHOT'
 buildscript {
     repositories {
         google()
-        mavenCentral()
+        jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.5.0'
     }
 }
 
 rootProject.allprojects {
     repositories {
         google()
+        jcenter()
     }
 }
 
@@ -34,6 +35,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.mhiew:android-pdf-viewer:3.2.0-beta.3'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
 }
 
